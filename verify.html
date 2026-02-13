@@ -1,40 +1,139 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Verify Ride</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <title>Verify Ride</title>
+  <link rel="stylesheet" href="style.css">
 
+  <!-- Particles -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
 
 <body>
 
+<!-- ===== NAVBAR ===== -->
 <nav>
   <div class="logo">🌸 SafeHer</div>
   <ul>
     <li><a href="index.html">Home</a></li>
-    <li><a href="verify.html">Verify Ride</a></li>
+    <li><a href="verify.html" class="active">Verify Ride</a></li>
     <li><a href="review.html">Add Review</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
 
+<!-- ===== MAIN CARD ===== -->
 <div class="card">
 
-<h2>Verify Your Ride</h2>
+  <h2>🔍 Verify Your Ride</h2>
 
-<input id="vehicle" placeholder="Enter Vehicle Number">
+  
+  <p>
+    Enter your vehicle number to check whether the ride is safe
+    based on previous user reviews and complaints.
+  </p>
 
-<button onclick="verifyRide()">Verify</button>
+  <input id="vehicle" placeholder="Enter Vehicle Number (e.g. OD-02-AB-1234)">
 
-<button class="sos" onclick="sendSOS()">SOS</button>
+  <button onclick="verifyRide()">Verify</button>
 
-<button onclick="fakeCall()">Fake Call</button>
+  <button class="sos" onclick="sendSOS()">🚨 SOS</button>
 
-<div id="result"></div>
+  <button onclick="fakeCall()">📞 Fake Call</button>
+
+  <!-- RESULT -->
+  <div id="result" style="margin-top:15px; font-weight:bold;"></div>
 
 </div>
+
+<!-- ===== HOW TO USE ===== -->
+<div class="card">
+
+  <h2>📖 How to Use SafeHer</h2>
+
+  <div class="steps">
+
+    <div class="step-box">
+      <div class="step-number">1</div>
+      <h3>Enter Vehicle Number</h3>
+      <p>Type your cab or auto number in the input box.</p>
+    </div>
+
+    <div class="step-box">
+      <div class="step-number">2</div>
+      <h3>Verify Ride</h3>
+      <p>Click on verify to check safety status instantly.</p>
+    </div>
+
+    <div class="step-box">
+      <div class="step-number">3</div>
+      <h3>Check Result</h3>
+      <p>See if the ride is safe or unsafe.</p>
+    </div>
+
+    <div class="step-box">
+      <div class="step-number">4</div>
+      <h3>Use SOS</h3>
+      <p>Press SOS button in case of emergency.</p>
+    </div>
+
+    <div class="step-box">
+      <div class="step-number">5</div>
+      <h3>Add Review</h3>
+      <p>Share your experience to help others.</p>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ===== SAFETY TIPS ===== -->
+<div class="card">
+
+  <h2>🛡️ Safety Tips</h2>
+
+  <div class="tips-grid">
+
+    <div class="tip-box">
+      <h3>📤 Share Ride</h3>
+      <p>Always share your ride details with family or friends.</p>
+    </div>
+
+    <div class="tip-box">
+      <h3>👤 Verify Driver</h3>
+      <p>Check driver identity before starting your ride.</p>
+    </div>
+
+    <div class="tip-box">
+      <h3>🌙 Avoid Isolation</h3>
+      <p>Avoid lonely routes especially at night.</p>
+    </div>
+
+    <div class="tip-box">
+      <h3>📱 Emergency Ready</h3>
+      <p>Keep emergency contacts easily accessible.</p>
+    </div>
+
+    <div class="tip-box">
+      <h3>🚨 Use SOS</h3>
+      <p>Press SOS button in any unsafe situation.</p>
+    </div>
+
+    <div class="tip-box">
+      <h3>🧠 Trust Instincts</h3>
+      <p>If something feels wrong, take action immediately.</p>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2026 SafeHer Ride | Women Safety Platform</p>
+</footer>
 
 <script src="script.js"></script>
 

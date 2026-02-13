@@ -11,23 +11,20 @@ body{
  color:white;
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 nav{
  display:flex;
  justify-content:space-between;
- align-items:center;
  padding:15px 40px;
  position:fixed;
  width:100%;
  top:0;
  background:black;
- z-index:1000;
 }
 
 .logo{
- font-size:22px;
- font-weight:bold;
  color:#ff0a3b;
+ font-weight:bold;
 }
 
 nav ul{
@@ -36,7 +33,7 @@ nav ul{
 }
 
 nav ul li{
- margin:0 12px;
+ margin:0 10px;
 }
 
 nav a{
@@ -44,53 +41,46 @@ nav a{
  text-decoration:none;
 }
 
-nav a:hover,
 .active{
  color:#ff0a3b;
 }
 
-/* ===== CARD ===== */
+/* CARD */
 .card{
  width:70%;
- margin:120px auto 40px;
+ margin:120px auto;
  background:#111;
- padding:20px;
+ padding:25px;
  border-radius:10px;
  text-align:center;
 }
 
-/* ===== INPUT ===== */
-input, textarea, select{
- width:90%;
- padding:10px;
- margin:8px;
- border-radius:5px;
- border:none;
+/* BUTTONS */
+.contact-buttons{
+ display:flex;
+ flex-direction:column;
+ gap:15px;
+ margin-top:20px;
 }
 
-/* ===== BUTTON ===== */
-button{
- padding:10px 15px;
- margin:5px;
+.call-btn{
+ display:block;
+ padding:15px;
  background:#ff0a3b;
  color:white;
- border:none;
- border-radius:5px;
+ text-decoration:none;
+ border-radius:8px;
+ font-size:16px;
+ transition:0.3s;
 }
 
-button:hover{
- opacity:0.8;
- cursor:pointer;
+.call-btn:hover{
+ background:#ff2c5c;
+ transform:scale(1.05);
 }
 
-.sos{
- background:red;
-}
-
-/* ===== FOOTER ===== */
+/* FOOTER */
 footer{
- background:black;
  text-align:center;
  padding:15px;
- margin-top:20px;
 }

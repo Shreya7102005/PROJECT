@@ -1,165 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>SafeHer – A Safer India for Women</title>
+  <title>SafeHer – A Safer India for Women</title>
 
-<style>
+  <!-- Common CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
 
-/* ===== BASIC ===== */
-*{
- margin:0;
- padding:0;
- box-sizing:border-box;
- font-family:Arial;
-}
-
-body{
- background:black;
- color:white;
-}
-
-/* ===== NAVBAR ===== */
-nav{
- display:flex;
- justify-content:space-between;
- align-items:center;
- padding:15px 40px;
- position:absolute;
- width:100%;
- top:0;
- z-index:10;
-}
-
-.logo{
- font-size:22px;
- font-weight:bold;
- color:#ff0a3b;
-}
-
-nav ul{
- display:flex;
- list-style:none;
-}
-
-nav ul li{
- margin:0 12px;
-}
-
-nav a{
- color:white;
- text-decoration:none;
- font-size:14px;
-}
-
-nav .active{
- background:#ff0a3b;
- padding:6px 14px;
- border-radius:20px;
-}
-
-/* ===== HERO SECTION ===== */
-.hero{
- height:100vh;
- background:
- linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
- url('https://images.pexels.com/photos/3810792/pexels-photo-3810792.jpeg');
-
- background-size:cover;
- background-position:center;
-
- display:flex;
- align-items:center;
- justify-content:center;
- text-align:center;
-}
-
-.content{
- width:70%;
-}
-
-.small{
- letter-spacing:2px;
- font-size:14px;
-}
-
-.main{
- font-size:60px;
- color:#ff0a3b;
- margin:10px 0;
-}
-
-.tag{
- font-size:16px;
- margin-bottom:20px;
- color:#ddd;
-}
-
-/* ===== BUTTONS ===== */
-.btn{
- padding:12px 24px;
- margin:10px;
- border-radius:30px;
- text-decoration:none;
-}
-
-.primary{
- background:#ff0a3b;
- color:white;
-}
-
-.outline{
- border:1px solid #ff0a3b;
- color:#ff0a3b;
-}
-
-</style>
+  <!-- Optional Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<!-- ===== NAVBAR ===== -->
 <nav>
+  <div class="logo">🌸 SafeHer</div>
 
- <div class="logo">
-   SAFEHER
- </div>
-
- <ul>
-  <li><a class="active" href="#">HOME</a></li>
-  <li><a href="#">ABOUT US</a></li>
-  <li><a href="#">INITIATIVES</a></li>
-  <li><a href="#">RESOURCES</a></li>
-  <li><a href="#">CONTACT</a></li>
- </ul>
-
+  <ul>
+    <li><a href="index.html" >Home</a></li>
+    <li><a href="verify.html">Verify Ride</a></li>
+    <li><a href="review.html">Add Review</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
 </nav>
 
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
 
-<!-- HERO -->
-<section class="hero" id="hero">
+  <div class="content">
 
-<div class="content">
+    <p class="small">ONE VOICE. ONE MISSION</p>
 
- <p class="small">ONE VOICE. ONE MISSION</p>
+    <h1 class="main">
+      A Safer India<br>for Women
+    </h1>
 
- <h1 class="main">
-  A Safer India<br>for Women
- </h1>
-
- <p class="tag">
- Don’t just hope for change, be the change.
- Every woman deserves fearless travel.
- </p>
-
- <a href="verify.html" class="btn primary">
+    <p class="tag">
+      Don’t just hope for change, be the change.
+      Every woman deserves fearless travel.
+    </p>
+<a href="verify.html" class="verify-btn">
   Verify a Ride
- </a>
+</a>
 
-</div>
+
+  </div>
 
 </section>
 
+<!-- ===== FEATURES ===== -->
+<section class="grid">
 
+  <div class="box">
+    <h3>🔍 Verify Ride</h3>
+    <p>Check safety of your cab using AI-based data.</p>
+  </div>
+
+  <div class="box">
+    <h3>🚨 SOS Alert</h3>
+    <p>Send emergency alert instantly to trusted contacts.</p>
+  </div>
+
+  <div class="box">
+    <h3>⭐ Reviews</h3>
+    <p>Read and share experiences about drivers.</p>
+  </div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2026 SafeHer Ride | Women Safety Platform</p>
+</footer>
 
 </body>
 </html>

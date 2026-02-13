@@ -1,0 +1,177 @@
+/* ===== BASIC ===== */
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:Arial;
+}
+
+body{
+ background:black;
+ color:white;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ padding:15px 40px;
+ position:absolute;
+ width:100%;
+ top:0;
+ z-index:10;
+}
+
+.logo{
+ font-size:22px;
+ font-weight:bold;
+ color:#ff0a3b;
+}
+
+nav ul{
+ display:flex;
+ list-style:none;
+}
+
+nav ul li{
+ margin:0 12px;
+}
+
+nav a{
+ color:white;
+ text-decoration:none;
+ font-size:14px;
+}
+
+nav a:hover{
+ color:#ff0a3b;
+}
+
+.active{
+ background:#ff0a3b;
+ padding:6px 14px;
+ border-radius:20px;
+}
+
+/* ===== HERO SECTION ===== */
+.hero{
+ height:100vh;
+ background:
+ linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+ url('i1.jpg');
+
+ background-size:cover;
+ background-position:center;
+
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ text-align:center;
+}
+
+.content{
+ width:70%;
+}
+
+.small{
+ letter-spacing:2px;
+ font-size:14px;
+}
+
+.main{
+ font-size:60px;
+ color:#ff0a3b;
+ margin:10px 0;
+}
+
+.tag{
+ font-size:16px;
+ margin-bottom:20px;
+ color:#ddd;
+}
+
+/* ===== BUTTON ===== */
+.btn{
+ padding:12px 24px;
+ margin:10px;
+ border-radius:30px;
+ text-decoration:none;
+ display:inline-block;
+}
+
+.primary{
+ background:#ff0a3b;
+ color:white;
+}
+
+.primary:hover{
+ background:#ff2c5c;
+}
+
+/* ===== FEATURES ===== */
+.grid{
+ display:flex;
+ justify-content:center;
+ flex-wrap:wrap;
+ margin-top:30px;
+}
+
+.box{
+ background:rgba(0,0,0,0.7);
+ margin:10px;
+ padding:20px;
+ width:250px;
+ border-radius:10px;
+ text-align:center;
+ transition:0.3s;
+}
+
+.box:hover{
+ transform:translateY(-5px);
+ box-shadow:0 0 15px #ff0a3b;
+}
+
+.box h3{
+ color:#ff0a3b;
+ margin-bottom:10px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+ background:black;
+ color:white;
+ text-align:center;
+ padding:15px;
+ margin-top:20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+ .main{
+  font-size:35px;
+ }
+ .content{
+  width:90%;
+ }
+ .box{
+  width:90%;
+ }
+}
+.verify-btn{
+ display:inline-block;
+ padding:12px 28px;
+ border-radius:30px;
+ background:#ff0a3b;
+ color:white;          /* TEXT WHITE */
+ text-decoration:none;
+ font-size:16px;
+ font-weight:bold;
+ transition:0.3s;
+}
+
+/* Hover effect */
+.verify-btn:hover{
+ background:#ff2c5c;
+ transform:scale(1.05);
+}

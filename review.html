@@ -1,44 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Add Review</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <title>Add Review</title>
+  <link rel="stylesheet" href="style.css">
 
+  <!-- Particles -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
 
 <body>
 
+<!-- ===== NAVBAR ===== -->
 <nav>
   <div class="logo">🌸 SafeHer</div>
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="verify.html">Verify Ride</a></li>
-    <li><a href="review.html">Add Review</a></li>
+    <li><a href="review.html" class="active">Add Review</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
 
+<!-- ===== REVIEW FORM ===== -->
 <div class="card">
 
-<h2>Add Ride Review</h2>
+  <h2>⭐ Add Ride Review</h2>
 
-<input id="vno" placeholder="Vehicle Number">
+  <p>Share your experience to help other women travel safely.</p>
 
-<textarea id="text" placeholder="Write your experience"></textarea>
+  <input id="vno" placeholder="Enter Vehicle Number (e.g. OD-02-AB-1234)">
 
-<select id="label">
-<option value="safe">Safe</option>
-<option value="unsafe">Unsafe</option>
-<option value="harassment">Harassment</option>
-</select>
+  <textarea id="text" placeholder="Write your experience"></textarea>
 
-<button onclick="addReview()">Submit Review</button>
+  <!-- CATEGORY -->
+  <h3>Select Category</h3>
 
-<p id="msg"></p>
+  <div class="review-type">
+    <div class="type-box" onclick="selectType('safe')">😊 Safe</div>
+    <div class="type-box" onclick="selectType('unsafe')">⚠️ Unsafe</div>
+    <div class="type-box" onclick="selectType('harassment')">🚨 Harassment</div>
+  </div>
+
+  <input type="hidden" id="label">
+
+  <!-- STAR RATING -->
+  <h3>Rate Your Ride</h3>
+
+  <div class="stars">
+    <span onclick="rate(1)">★</span>
+    <span onclick="rate(2)">★</span>
+    <span onclick="rate(3)">★</span>
+    <span onclick="rate(4)">★</span>
+    <span onclick="rate(5)">★</span>
+  </div>
+
+  <input type="hidden" id="rating">
+
+  <br>
+
+  <button onclick="addReview()">Submit Review</button>
+
+  <p id="msg"></p>
 
 </div>
+
+<!-- ===== INSTRUCTIONS ===== -->
+<div class="card">
+
+  <h2>📖 Guidelines</h2>
+
+  <p>✔ Share honest experience</p>
+  <p>✔ Avoid false reporting</p>
+  <p>✔ Help others travel safely</p>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2026 SafeHer Ride | Women Safety Platform</p>
+</footer>
 
 <script src="script.js"></script>
 
