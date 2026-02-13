@@ -1,0 +1,133 @@
+
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:'Poppins',sans-serif;
+}
+
+body{
+ background:#faf0ff;
+}
+
+/* NAVBAR */
+nav{
+ display:flex;
+ justify-content:space-between;
+ background:#5e35b1;
+ padding:15px;
+ color:white;
+}
+
+nav ul{
+ display:flex;
+ list-style:none;
+}
+
+nav ul li{
+ margin:0 10px;
+}
+
+nav a{
+ color:white;
+ text-decoration:none;
+}
+
+/* HERO */
+.hero{
+ text-align:center;
+ padding:60px;
+ background:linear-gradient(#ede7f6,#fff);
+}
+
+.hero h1{
+ font-size:36px;
+ margin-bottom:10px;
+}
+
+.btn{
+ background:#6a1b9a;
+ color:white;
+ padding:10px 20px;
+ border-radius:5px;
+ text-decoration:none;
+}
+
+/* CARD */
+.card{
+ width:70%;
+ margin:20px auto;
+ background:white;
+ padding:20px;
+ border-radius:10px;
+ box-shadow:0 0 10px #ccc;
+}
+
+input, textarea, select{
+ width:90%;
+ padding:10px;
+ margin:8px;
+}
+
+button{
+ padding:10px;
+ margin:5px;
+ background:#7b1fa2;
+ color:white;
+ border:none;
+}
+
+/* STAR RATING */
+.stars span{
+ font-size:26px;
+ cursor:pointer;
+ color:gray;
+}
+
+.stars .active{
+ color:gold;
+}
+
+/* GRID */
+.grid{
+ display:flex;
+ justify-content:center;
+}
+
+.box{
+ background:#f3e5f5;
+ margin:10px;
+ padding:15px;
+ width:30%;
+ border-radius:8px;
+}
+
+/* FOOTER */
+footer{
+ background:#4a148c;
+ color:white;
+ text-align:center;
+ padding:20px;
+ margin-top:20px;
+}
+#particles-js{
+ position:fixed;
+ width:100%;
+ height:100%;
+ top:0;
+ left:0;
+ z-index:-1;
+}
+.hero{
+ text-align:center;
+ padding:60px;
+
+ /* Ye naya part */
+ background-size:cover;
+ background-position:center;
+ transition: background-image 2s ease-in-out;
+
+ color:white;
+}
+
+

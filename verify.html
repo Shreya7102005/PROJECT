@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Verify Ride</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">🌸 SafeHer</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="verify.html">Verify Ride</a></li>
+    <li><a href="review.html">Add Review</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="card">
+
+<h2>Verify Your Ride</h2>
+
+<input id="vehicle" placeholder="Enter Vehicle Number">
+
+<button onclick="verifyRide()">Verify</button>
+
+<button class="sos" onclick="sendSOS()">SOS</button>
+
+<button onclick="fakeCall()">Fake Call</button>
+
+<div id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
