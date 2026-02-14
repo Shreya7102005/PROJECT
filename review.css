@@ -1,0 +1,204 @@
+/* ===== BASIC ===== */
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:Arial;
+}
+
+body{
+ background:black;
+ color:white;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+ display:flex;
+ justify-content:space-between;
+ padding:15px 40px;
+ position:fixed;
+ width:100%;
+ top:0;
+ background:black;
+}
+
+.logo{
+ color:#ff0a3b;
+ font-weight:bold;
+}
+
+nav ul{
+ display:flex;
+ list-style:none;
+}
+
+nav ul li{
+ margin:0 10px;
+}
+
+nav a{
+ color:white;
+ text-decoration:none;
+}
+
+nav a.active{
+ color:#ff0a3b;
+}
+
+/* ===== CARD ===== */
+.card{
+ width:70%;
+ margin:120px auto 40px;
+ background:rgba(0,0,0,0.8);
+ padding:25px;
+ border-radius:12px;
+ text-align:center;
+ box-shadow:0 0 10px #222;
+}
+
+.card h2{
+ color:#ff0a3b;
+}
+
+.card h3{
+ color:#ff0a3b;
+ margin-top:15px;
+}
+
+/* ===== INPUT ===== */
+input, textarea{
+ width:90%;
+ padding:10px;
+ margin:10px;
+ border-radius:5px;
+ border:none;
+}
+
+/* ===== CATEGORY ===== */
+.review-type{
+ display:flex;
+ justify-content:center;
+ gap:15px;
+ flex-wrap:wrap;
+ margin-top:10px;
+}
+
+.type-box{
+ background:#111;
+ padding:10px 15px;
+ border-radius:8px;
+ cursor:pointer;
+ box-shadow:0 0 8px #333;
+ transition:0.3s;
+}
+
+.type-box:hover{
+ background:#ff0a3b;
+}
+
+.type-box.active{
+ background:#ff0a3b;
+}
+
+/* ===== STARS ===== */
+.stars{
+ margin:10px 0;
+}
+
+.stars span{
+ font-size:30px;
+ cursor:pointer;
+ color:gray;
+}
+
+.stars .active{
+ color:gold;
+}
+
+/* ===== BUTTON ===== */
+button{
+ padding:10px 20px;
+ background:#ff0a3b;
+ color:white;
+ border:none;
+ border-radius:5px;
+}
+
+button:hover{
+ opacity:0.8;
+ cursor:pointer;
+}
+
+/* ===== MESSAGE ===== */
+#msg{
+ margin-top:10px;
+}
+
+/* ===== GUIDELINES ===== */
+.guidelines{
+ display:flex;
+ flex-wrap:wrap;
+ justify-content:center;
+ gap:20px;
+ margin-top:20px;
+}
+
+.guide-box{
+ background:rgba(0,0,0,0.7);
+ padding:20px;
+ width:220px;
+ border-radius:12px;
+ text-align:center;
+ box-shadow:0 0 10px #222;
+ transition:0.3s;
+ position:relative;
+ overflow:hidden;
+}
+
+.guide-box:hover{
+ transform:translateY(-6px);
+ box-shadow:0 0 15px #ff0a3b;
+}
+
+.guide-box h3{
+ color:#ff0a3b;
+ margin-bottom:10px;
+}
+
+.guide-box p{
+ color:#ccc;
+ font-size:14px;
+}
+
+/* Glow Animation */
+.guide-box::before{
+ content:"";
+ position:absolute;
+ top:0;
+ left:-100%;
+ width:100%;
+ height:100%;
+ background:linear-gradient(90deg,transparent,#ff0a3b,transparent);
+ transition:0.5s;
+}
+
+.guide-box:hover::before{
+ left:100%;
+}
+
+/* ===== FOOTER ===== */
+footer{
+ text-align:center;
+ padding:15px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+ .card{
+  width:90%;
+ }
+
+ .guide-box{
+  width:90%;
+ }
+}

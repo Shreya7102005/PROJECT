@@ -2,10 +2,7 @@
 <html>
 <head>
   <title>Add Review</title>
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Particles -->
-  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <link rel="stylesheet" href="review.css">
 </head>
 
 <body>
@@ -13,6 +10,7 @@
 <!-- ===== NAVBAR ===== -->
 <nav>
   <div class="logo">🌸 SafeHer</div>
+
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="verify.html">Verify Ride</a></li>
@@ -27,9 +25,9 @@
 
   <h2>⭐ Add Ride Review</h2>
 
-  <p>Share your experience to help other women travel safely.</p>
+  <p>Share your experience to help others travel safely.</p>
 
-  <input id="vno" placeholder="Enter Vehicle Number (e.g. OD-02-AB-1234)">
+  <input id="vno" placeholder="Enter Vehicle Number">
 
   <textarea id="text" placeholder="Write your experience"></textarea>
 
@@ -37,14 +35,14 @@
   <h3>Select Category</h3>
 
   <div class="review-type">
-    <div class="type-box" onclick="selectType('safe')">😊 Safe</div>
-    <div class="type-box" onclick="selectType('unsafe')">⚠️ Unsafe</div>
-    <div class="type-box" onclick="selectType('harassment')">🚨 Harassment</div>
+    <div class="type-box" onclick="selectType('safe', this)">😊 Safe</div>
+    <div class="type-box" onclick="selectType('unsafe', this)">⚠️ Unsafe</div>
+    <div class="type-box" onclick="selectType('harassment', this)">🚨 Harassment</div>
   </div>
 
   <input type="hidden" id="label">
 
-  <!-- STAR RATING -->
+  <!-- RATING -->
   <h3>Rate Your Ride</h3>
 
   <div class="stars">
@@ -65,14 +63,34 @@
 
 </div>
 
-<!-- ===== INSTRUCTIONS ===== -->
+<!-- ===== GUIDELINES ===== -->
 <div class="card">
 
-  <h2>📖 Guidelines</h2>
+  <h2>📖 Review Guidelines</h2>
 
-  <p>✔ Share honest experience</p>
-  <p>✔ Avoid false reporting</p>
-  <p>✔ Help others travel safely</p>
+  <div class="guidelines">
+
+    <div class="guide-box">
+      <h3>✅ Be Honest</h3>
+      <p>Share your real experience to help others.</p>
+    </div>
+
+    <div class="guide-box">
+      <h3>🚫 No False Reports</h3>
+      <p>Avoid giving misleading or fake reviews.</p>
+    </div>
+
+    <div class="guide-box">
+      <h3>🤝 Help Community</h3>
+      <p>Your review helps women travel safely.</p>
+    </div>
+
+    <div class="guide-box">
+      <h3>⚠️ Report Issues</h3>
+      <p>Report unsafe behavior immediately.</p>
+    </div>
+
+  </div>
 
 </div>
 
